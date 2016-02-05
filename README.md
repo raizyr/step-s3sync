@@ -6,11 +6,11 @@ The synchronized files will get an public access level.
 
 It is recommended that you use application and deployment variables in wercker, so you don't include any private keys in your code.
 
-[![wercker status](https://app.wercker.com/status/2064379a8b583cd1b5da16de3faa5583/m "wercker status")](https://app.wercker.com/project/bykey/2064379a8b583cd1b5da16de3faa5583)
+[![wercker status](https://app.wercker.com/status/fc1a8c0beb8b7ccb39a156e3ef639b18/m/master "wercker status")](https://app.wercker.com/project/bykey/fc1a8c0beb8b7ccb39a156e3ef639b18)
 
 # What's new
 
-- Always display s3cmd output
+- s3cmd is expected to be in path, use a box/container that already has it.
 
 # Options
 
@@ -25,6 +25,7 @@ It is recommended that you use application and deployment variables in wercker, 
 
 ```
 deploy:
+    box: raizyr/s3cmd
     steps:
         - s3sync:
             key-id: $KEY
