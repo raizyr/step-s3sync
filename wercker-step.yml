@@ -1,3 +1,3 @@
-name: s3sync-docker
+name: s3sync
 version: 1.0.0
 description: s3sync in docker step, use container [raizyr/s3cmd](git@github.com:raizyr/step-s3sync.git) or your own lightweight container with s3cmd.
